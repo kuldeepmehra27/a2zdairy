@@ -19,7 +19,10 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
-        "drupal/core-vendor-hardening": "^9.2"
+        "drupal/core-vendor-hardening": "^9.2",
+        "drupal/dxpr_theme": "^1.2",
+        "drupal/pathauto": "^1.8",
+        "drupal/youtube": "^1.2"
     },
     "conflict": {
         "drupal/drupal": "*"

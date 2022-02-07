@@ -1,4 +1,4 @@
-uuid: 04a3aeb2-4833-41f2-b5e0-24382b7c2443
+uuid: 385463e7-4782-429a-b00a-83dca1a29453
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - dmeadmin@drupalizeme.com
+  - a2zdairy@a2zdairy.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

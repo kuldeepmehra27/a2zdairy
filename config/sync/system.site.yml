@@ -1,11 +1,11 @@
-uuid: 9e3661c6-2e32-4f15-9d17-43563cbed68d
-name: DrupalizeMe
-mail: dmeadmin@drupalizeme.com
+uuid: aeb0cb53-480a-4e3e-8301-9fc84426ab11
+name: A2ZDairy
+mail: a2zdairy@a2zdairy.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
