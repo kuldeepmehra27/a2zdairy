@@ -1,0 +1,22 @@
+uuid: 62d3bb95-a4ce-4ab6-a239-e1c27845dfd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.youtube_videos.field_video_link
+    - node.type.youtube_videos
+  module:
+    - user
+id: node.youtube_videos.teaser
+targetEntityType: node
+bundle: youtube_videos
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_video_link: true

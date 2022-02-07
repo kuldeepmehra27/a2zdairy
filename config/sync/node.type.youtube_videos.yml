@@ -1,0 +1,18 @@
+uuid: d716c060-7449-4d1f-a28f-3f6bdff7d939
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Youtube Videos'
+type: youtube_videos
+description: 'My youtube videos'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
