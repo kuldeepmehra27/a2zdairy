@@ -1,0 +1,30 @@
+uuid: 436fbba3-70c1-48f8-b983-37dc722b0fd9
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6e430f24-13df-4b14-81a8-766977ff2420'
+  module:
+    - block_content
+    - system
+  theme:
+    - dxpr_my_theme
+id: dxpr_my_theme_topvideo
+theme: dxpr_my_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:6e430f24-13df-4b14-81a8-766977ff2420'
+settings:
+  id: 'block_content:6e430f24-13df-4b14-81a8-766977ff2420'
+  label: 'Top Video'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
