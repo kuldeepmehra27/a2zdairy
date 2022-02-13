@@ -1,0 +1,12 @@
+uuid: 3c9de74d-b1e0-4bf0-9128-eee027220c5e
+langcode: en
+status: true
+dependencies: {  }
+id: content_creator
+label: 'Content Creator'
+weight: 3
+is_admin: null
+permissions:
+  - 'create article content'
+  - 'delete own article content'
+  - 'edit own article content'

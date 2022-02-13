@@ -1,0 +1,6 @@
+.node-form .filter-wrapper {
+    display: none;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: inherit;
+}

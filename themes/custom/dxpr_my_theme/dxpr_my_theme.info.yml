@@ -4,7 +4,7 @@ core_version_requirement: ^8 || ^9
 base theme: dxpr_theme
 
 name: 'DXPR My Theme'
-description: 'This is my dxpr theme.'
+description: 'Use this STARTERKIT example if you need to build extra css files and templates on top of DXPR Theme.'
 package: DXPR
 
 regions:

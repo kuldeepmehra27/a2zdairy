@@ -11,42 +11,42 @@
  * Implements hook_preprocess_page().
  */
 // phpcs:disable
-function dxpr_theme_STARTERKIT_preprocess_page(&$variables) {
+function dxpr_my_theme_preprocess_page(&$variables) {
   $dxpr_theme_libraries = [
     // Bootstrap TAILORING.
-    'dxpr_theme_STARTERKIT/bootstrap-3',
-    'dxpr_theme_STARTERKIT/bootstrap-theme',
-    'dxpr_theme_STARTERKIT/jquery-ui',
+    'dxpr_my_theme/bootstrap-3',
+    'dxpr_my_theme/bootstrap-theme',
+    'dxpr_my_theme/jquery-ui',
     // DXPR THEME BASE.
-    'dxpr_theme_STARTERKIT/footer-menu',
-    'dxpr_theme_STARTERKIT/forms',
-    'dxpr_theme_STARTERKIT/layout',
-    'dxpr_theme_STARTERKIT/page-title',
-    'dxpr_theme_STARTERKIT/typography',
+    'dxpr_my_theme/footer-menu',
+    'dxpr_my_theme/forms',
+    'dxpr_my_theme/layout',
+    'dxpr_my_theme/page-title',
+    'dxpr_my_theme/typography',
     // DXPR THEME Components.
-    'dxpr_theme_STARTERKIT/dxpr-theme-full-screen-search',
-    'dxpr_theme_STARTERKIT/dxpr-theme-header',
-    'dxpr_theme_STARTERKIT/dxpr-theme-header--top',
-    'dxpr_theme_STARTERKIT/dxpr-theme-header--side',
-    'dxpr_theme_STARTERKIT/dxpr-theme-header--mobile',
-    'dxpr_theme_STARTERKIT/dxpr-theme-secondary-header',
-    'dxpr_theme_STARTERKIT/pager-prevnext',
-    'dxpr_theme_STARTERKIT/dxpr-theme-admin',
+    'dxpr_my_theme/dxpr-theme-full-screen-search',
+    'dxpr_my_theme/dxpr-theme-header',
+    'dxpr_my_theme/dxpr-theme-header--top',
+    'dxpr_my_theme/dxpr-theme-header--side',
+    'dxpr_my_theme/dxpr-theme-header--mobile',
+    'dxpr_my_theme/dxpr-theme-secondary-header',
+    'dxpr_my_theme/pager-prevnext',
+    'dxpr_my_theme/dxpr-theme-admin',
     // Overrides.
-    'dxpr_theme_STARTERKIT/cubeportfolio',
-    'dxpr_theme_STARTERKIT/drupal-breadcrumbs',
-    'dxpr_theme_STARTERKIT/drupal-comments',
-    'dxpr_theme_STARTERKIT/drupal-pager',
-    'dxpr_theme_STARTERKIT/drupal-webform',
-    'dxpr_theme_STARTERKIT/cms-bootstrap-core',
-    'dxpr_theme_STARTERKIT/cms-bootstrap-blog',
-    'dxpr_theme_STARTERKIT/cms-bootstrap-events',
-    'dxpr_theme_STARTERKIT/cms-bootstrap-news',
-    'dxpr_theme_STARTERKIT/cms-bootstrap-portfolio',
-    'dxpr_theme_STARTERKIT/sooperthemes-premium-elements',
-    'dxpr_theme_STARTERKIT/dxpr-theme-builder',
+    'dxpr_my_theme/cubeportfolio',
+    'dxpr_my_theme/drupal-breadcrumbs',
+    'dxpr_my_theme/drupal-comments',
+    'dxpr_my_theme/drupal-pager',
+    'dxpr_my_theme/drupal-webform',
+    'dxpr_my_theme/cms-bootstrap-core',
+    'dxpr_my_theme/cms-bootstrap-blog',
+    'dxpr_my_theme/cms-bootstrap-events',
+    'dxpr_my_theme/cms-bootstrap-news',
+    'dxpr_my_theme/cms-bootstrap-portfolio',
+    'dxpr_my_theme/sooperthemes-premium-elements',
+    'dxpr_my_theme/dxpr-theme-builder',
     // HELPERS.
-    'dxpr_theme_STARTERKIT/helper-classes',
+    'dxpr_my_theme/helper-classes',
   ];
   foreach ($dxpr_theme_libraries as $dxpr_theme_library) {
     $variables['#attached']['library'][] = $dxpr_theme_library;
