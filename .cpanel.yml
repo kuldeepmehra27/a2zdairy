@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/drupbcjv/a2zdairy.com/
+    - export DEPLOYPATH=/home/drupbcjv/a2zdairy/
     - /bin/cp -R * $DEPLOYPATH
     - /bin/cp * $DEPLOYPATH
