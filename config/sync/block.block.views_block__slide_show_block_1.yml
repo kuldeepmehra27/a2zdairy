@@ -1,0 +1,29 @@
+uuid: 7d1a2695-7be3-46cf-8d4b-07a04488c3c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slide_show
+  module:
+    - system
+    - views
+  theme:
+    - dxpr_theme
+id: views_block__slide_show_block_1
+theme: dxpr_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:slide_show-block_1'
+settings:
+  id: 'views_block:slide_show-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
