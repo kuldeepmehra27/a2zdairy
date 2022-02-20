@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Module file for dxpr_theme_helper.
+ */
+
+use Drupal\Component\Utility\Unicode;
+use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_toolbar().
+ */
+function dxpr_theme_helper_toolbar() {
+
+  if (\Drupal::currentUser()->hasPermission('Use the administration toolbar')
+    && \Drupal::currentUser()->hasPermission('Administer themes')) {
+
+    $config = \Drupal::config('system.theme');
+    $default_theme = $config->get('default');
+
+    // Create the DXPR Theme Helper toolbar render array.
+    $items['DxprThemeSettings'] = [
+      '#type' => 'toolbar_item',
+      'tab' => [
+        '#type' => 'link',
+        '#title' => t('Theme Settings'),
+        '#url' => Url::fromRoute('system.theme_settings_theme', ['theme' => $default_theme]),
+        '#attributes' => [
+          'title' => t('DXPR Theme Settings'),
+          'class' => ['toolbar-icon', 'toolbar-icon-dxpr-theme-helper'],
+        ],
+      ],
+      '#weight' => 99,
+      '#attached' => [
+        'library' => [
+          'dxpr_theme_helper/dxpr_theme_helper.icons',
+        ],
+      ],
+    ];
+
+    return $items;
+  }
+}

@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Styling for the user module icons.
+ */
+
+/**
+ * Toolbar tab icon.
+ */
+.toolbar-bar .toolbar-icon-dxpr-theme-helper:before {
+  background-image: url(../images/dxpr-logo-white.svg);
+}
+.toolbar-bar .toolbar-icon-dxpr-theme-helper:active:before,
+.toolbar-bar .toolbar-icon-dxpr-theme-helper.active:before {
+  background-image: url(../images/dxpr-logo-white.svg);
+}
